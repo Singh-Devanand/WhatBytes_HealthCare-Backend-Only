@@ -1,46 +1,28 @@
-Healthcare Management API :
+## 📸 API Testing Screenshots
 
-A RESTful Healthcare Management API built using Node.js, Express.js, MongoDB, and Mongoose. It provides secure user authentication and CRUD operations for patients, doctors, and patient-doctor assignments.
+### 1. User Registration API
+![User Registration](./screenshots/register.png)
 
+### 2. User Login API
+![User Login](./screenshots/login.png)
 
-Installation and Setup :
-1. Clone the repository-
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd healthcare-api
+### 3. User Logout API
+![User Logout](./screenshots/logout.png)
 
-2. Install dependencies-
-npm install
-npm install express mongoose dotenv bcryptjs jsonwebtoken cookie-parser cors
+### 4. Get All Patients API
+![Get All Patients](./screenshots/get-patients.png)
 
+### 5. Create Patient API
+![Create Patient](./screenshots/create-patient.png)
 
-4. Start the server-
-npm start
+### 6. Get Patient by ID API
+![Get Patient by ID](./screenshots/get-patient-by-id.png)
 
-API Endpoints:
+### 7. Update Patient API
+![Update Patient](./screenshots/update-patient.png)
 
-1. Authentication-
-a. register (/api/auth/register)
-b. login (/api/auth/login)
-c. logout (/api/auth/logout)
+### 8. Delete Patient API
+![Delete Patient](./screenshots/delete-patient.png)
 
-2. Patient Management-
-a. creating a patient (/api/patients)
-b. Get your patients (/api/patients)
-c. Get a patient by ID (/api/patients/:id)
-d. Update a patient (/api/patients/:id)
-e. Delete a patient (/api/patients/:id)
-
-3. Doctor Management-
-a. Create a doctor (/api/doctors)
-b. Get your doctors (/api/doctors)
-c. Get a doctor by ID (/api/doctors/:id)
-d. Update a doctor (/api/doctors/:id)
-e. Delete a doctor (/api/doctors/:id)
-
-4. Patient-Doctor Mappings-
-a. Assign a doctor to a patient (/api/mappings)
-b. Get your mappings (/api/mappings)
-c. Get a patient's doctor assignments (/api/mappings/:patient_id)
-d. Remove a mapping (/api/mappings/:id)
-
-THANK YOU !
+### 9. Create Doctor API
+![Create Doctor](./screenshots/create-doctor.png)
