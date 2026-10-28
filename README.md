@@ -1,4 +1,4 @@
-# Whatabytes Backend API
+# Whatbytes HealthCare-Backend API
 
 A RESTful backend API for managing user authentication, patients, and doctors. The API uses JSON requests and responses, with JWT-based authentication.
 
