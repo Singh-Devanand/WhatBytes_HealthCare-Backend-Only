@@ -64,13 +64,8 @@ Returns a success message, user details, and a JWT token.
 **Endpoint:** `POST /api/auth/login`
 
 **Request Body:**
+<img width="1896" height="993" alt="Screenshot 2026-10-28 115325" src="https://github.com/user-attachments/assets/433848d0-9bc2-49de-ab9a-56b32ad64ebc" />
 
-```json
-{
-  "email": "user@example.com",
-  "password": "YourStrongPassword"
-}
-```
 
 **Success Response:** `200 OK`
 
@@ -82,7 +77,8 @@ Returns a success message, user details, and a JWT token.
 
 This endpoint logs out the current user according to the authentication mechanism implemented in the backend.
 
----
+<img width="1902" height="985" alt="Screenshot 2026-10-28 115452" src="https://github.com/user-attachments/assets/34f717f0-f260-49f7-8fb3-6de78e039179" />
+
 
 ## 2. Patient Management APIs
 
@@ -100,14 +96,8 @@ This endpoint logs out the current user according to the authentication mechanis
 
 **Request Body:**
 
-```json
-{
-  "name": "Devanand",
-  "age": 23,
-  "gender": "Male",
-  "address": "Ghaziabad, UP"
-}
-```
+<img width="1898" height="992" alt="Screenshot 2026-10-28 120759" src="https://github.com/user-attachments/assets/dc11e656-f73c-4755-b4df-5907ce8e1ff4" />
+
 
 **Success Response:** `201 Created`
 
@@ -121,13 +111,8 @@ Returns the patient count and a list of patient records.
 
 **Example Response:**
 
-```json
-{
-  "message": "Patients fetched successfully",
-  "count": 1,
-  "patients": []
-}
-```
+<img width="1911" height="992" alt="Screenshot 2026-10-28 121123" src="https://github.com/user-attachments/assets/6213884b-cfba-449a-8c60-26301a7f16c2" />
+
 
 The example above illustrates the response structure; the actual array depends on the database contents.
 
@@ -138,10 +123,8 @@ The example above illustrates the response structure; the actual array depends o
 Replace `:id` with the patient's actual MongoDB document ID.
 
 **Example:**
+<img width="1902" height="991" alt="Screenshot 2026-10-28 121515" src="https://github.com/user-attachments/assets/5e0a78c0-4c6d-4e24-b0ff-954dfdd77ab3" />
 
-```text
-GET /api/patients/YOUR_PATIENT_ID
-```
 
 Returns the matching patient record.
 
@@ -151,14 +134,8 @@ Returns the matching patient record.
 
 **Request Body:**
 
-```json
-{
-  "name": "Deepu Singh",
-  "age": 24,
-  "gender": "Male",
-  "address": "Noida, UP"
-}
-```
+<img width="1917" height="992" alt="Screenshot 2026-10-28 121952" src="https://github.com/user-attachments/assets/c869e0d7-1618-4900-ba82-190c80612196" />
+
 
 **Success Response:** `200 OK`
 
@@ -174,7 +151,8 @@ Replace `:id` with the patient's actual ID.
 
 Returns a confirmation message when the patient is successfully deleted.
 
----
+<img width="1888" height="982" alt="Screenshot 2026-10-28 122051" src="https://github.com/user-attachments/assets/abe73e78-8364-49da-ac7c-3c68a700ca66" />
+
 
 ## 3. Doctor Management APIs
 
@@ -188,15 +166,8 @@ Returns a confirmation message when the patient is successfully deleted.
 
 **Request Body:**
 
-```json
-{
-  "name": "Dr. Example",
-  "specialization": "Dental",
-  "email": "doctor@example.com",
-  "phone": "9000000000",
-  "experience": 10
-}
-```
+<img width="1907" height="1007" alt="Screenshot 2026-10-28 122821" src="https://github.com/user-attachments/assets/8c2eaa56-450e-477a-a082-cf3354492327" />
+
 
 **Success Response:** `201 Created`
 
