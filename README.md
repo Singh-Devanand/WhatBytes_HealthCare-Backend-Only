@@ -159,6 +159,12 @@ Returns a confirmation message when the patient is successfully deleted.
 | Method | Endpoint | Description |
 |---|---|---|
 | POST | `/api/doctors` | Create a new doctor |
+| GET | `/api/doctors` | Fetch all doctors |
+| GET | `/api/doctors/:id` | Fetch a doctor by ID |
+| PUT | `/api/doctors/:id` | Update doctor details |
+| DELETE | `/api/doctors/:id` | Delete a doctor |
+
+**Note:** Confirm that these routes are implemented in your backend before documenting them as available endpoints.
 
 ### Create Doctor
 
@@ -166,16 +172,140 @@ Returns a confirmation message when the patient is successfully deleted.
 
 **Request Body:**
 
-<img width="1907" height="1007" alt="Screenshot 2026-10-28 122821" src="https://github.com/user-attachments/assets/8c2eaa56-450e-477a-a082-cf3354492327" />
+<img width="1907" height="1007" alt="Screenshot 2026-10-28 122821" src="https://github.com/user-attachments/assets/d0156f74-009d-4bba-8572-8e9c10df1e05" />
+
 
 
 **Success Response:** `201 Created`
 
 Returns a success message and the newly created doctor record.
 
-Use fictional details for testing and avoid publishing real personal information.
+### Get All Doctors
 
----
+**Endpoint:** `GET /api/doctors`
+
+Fetches the list of doctors stored in the database.
+<img width="1907" height="990" alt="Screenshot 2026-10-28 122901" src="https://github.com/user-attachments/assets/b12864a6-ab51-43be-bb49-3d961283da62" />
+
+
+### Get Doctor by ID
+
+**Endpoint:** `GET /api/doctors/:id`
+
+Replace `:id` with the doctor's MongoDB document ID.
+
+<img width="1888" height="987" alt="Screenshot 2026-10-28 123235" src="https://github.com/user-attachments/assets/3f0b061d-965a-4985-a6ab-d2547f20fd71" />
+
+
+Returns the matching doctor record.
+
+### Update Doctor
+
+**Endpoint:** `PUT /api/doctors/:id`
+
+**Request Body:**
+
+<img width="1915" height="992" alt="Screenshot 2026-10-28 123630" src="https://github.com/user-attachments/assets/907b2b1d-010f-4016-a738-6176ee1b4fd0" />
+
+
+Updates the specified doctor's details.
+
+### Delete Doctor
+
+**Endpoint:** `DELETE /api/doctors/:id`
+
+Replace `:id` with the doctor's MongoDB document ID.
+
+Deletes the specified doctor if the endpoint is implemented by the backend.
+
+<img width="1903" height="991" alt="Screenshot 2026-10-28 123720" src="https://github.com/user-attachments/assets/0fa0f172-d561-460b-8b61-a633e0bcefe5" />
+
+
+
+## 4. Patient-Doctor Mapping APIs
+
+These APIs manage the assignment of doctors to patients. All mapping routes use authentication middleware.
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/mappings` | Assign a doctor to a patient |
+| GET | `/api/mappings` | Retrieve all patient-doctor mappings |
+| GET | `/api/mappings/:patient_id` | Retrieve mappings for a specific patient |
+| DELETE | `/api/mappings/:id` | Delete a patient-doctor mapping |
+
+### 4.1 Assign Doctor to Patient
+
+**Method:** `POST`
+
+**Endpoint:** `/api/mappings`
+
+**Authorization:** Bearer Token
+
+**Request Body:**
+<img width="1897" height="1023" alt="Screenshot 2026-10-28 124528" src="https://github.com/user-attachments/assets/50222364-d456-41a4-93b6-aa3a8d32651d" />
+
+
+
+
+### 4.2 Get All Patient-Doctor Mappings
+
+**Method:** `GET`
+
+**Endpoint:** `/api/mappings`
+
+**Authorization:** Bearer Token
+
+Returns the patient-doctor mappings stored in the database.
+
+**Postman Screenshot:**
+
+<img width="1913" height="1007" alt="Screenshot 2026-10-28 124616" src="https://github.com/user-attachments/assets/9122150f-247b-46c2-85e7-694491bfc80e" />
+
+
+### 4.3 Get Patient-Doctor Mappings by Patient ID
+
+**Method:** `GET`
+
+**Endpoint:** `/api/mappings/:patient_id`
+
+**Authorization:** Bearer Token
+
+**Example Request:**
+
+```http
+GET /api/mappings/YOUR_PATIENT_ID
+```
+
+Replace `YOUR_PATIENT_ID` with the ID of the patient whose doctor mappings you want to retrieve.
+
+**Postman Screenshot:**
+
+<img width="1907" height="968" alt="Screenshot 2026-10-28 125213" src="https://github.com/user-attachments/assets/b20206cb-cf30-4916-a96e-675334dd6d3f" />
+
+
+### 4.4 Delete Patient-Doctor Mapping
+
+**Method:** `DELETE`
+
+**Endpoint:** `/api/mappings/:id`
+
+**Authorization:** Bearer Token
+
+**Example Request:**
+
+```http
+DELETE /api/mappings/YOUR_MAPPING_ID
+```
+
+Replace `YOUR_MAPPING_ID` with the ID of the mapping you want to delete.
+
+**Postman Screenshot:**
+
+<img width="1905" height="1005" alt="Screenshot 2026-10-28 125953" src="https://github.com/user-attachments/assets/a3d7c28c-20d6-4a9f-b017-99d332e35f1b" />
+
+
 
 ## JWT Authentication in Postman
 
