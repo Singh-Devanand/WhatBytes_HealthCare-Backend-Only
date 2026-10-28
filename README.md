@@ -52,14 +52,8 @@ Replace the port with the one configured in your backend.
 
 **Request Body:**
 
-```json
-{
-  "username": "Deva123",
-  "name": "Devanand Singh",
-  "email": "user@example.com",
-  "password": "YourStrongPassword"
-}
-```
+<img width="1915" height="996" alt="Screenshot 2026-10-28 115124" src="https://github.com/user-attachments/assets/bc5a1e39-3de3-4933-aa32-b03fbce7f3e2" />
+
 
 **Success Response:** `201 Created`
 
