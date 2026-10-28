@@ -439,7 +439,7 @@ The screenshots show successful HTTP responses, including `200 OK` and `201 Crea
 
 ## Conclusion
 
-The Whatabytes Backend API provides endpoints for user authentication and patient and doctor management. Its RESTful structure makes it possible to test the application's operations through Postman and integrate them with a frontend application.
+The Whatbytes HealthCare-Backend API provides endpoints for user authentication and patient and doctor management. Its RESTful structure makes it possible to test the application's operations through Postman and integrate them with a frontend application.
 
 ## Author
 
